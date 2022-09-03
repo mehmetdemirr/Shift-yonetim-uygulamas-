@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yan_menu_nav_host"
+    app:startDestination="@id/personelFragment">
+
+    <fragment
+        android:id="@+id/personelFragment"
+        android:name="com.papillionotelandspa.spash_screen.PersonelFragment"
+        android:label="fragment_personel"
+        tools:layout="@layout/fragment_personel" >
+        <action
+            android:id="@+id/gecis"
+            app:destination="@id/ozelPersonelFragment" />
+        <action
+            android:id="@+id/ekleGecis"
+            app:destination="@id/personelEkleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/primFragment"
+        android:name="com.papillionotelandspa.spash_screen.PrimFragment"
+        android:label="fragment_prim"
+        tools:layout="@layout/fragment_prim" />
+    <fragment
+        android:id="@+id/ozelPersonelFragment"
+        android:name="com.papillionotelandspa.spash_screen.OzelPersonelFragment"
+        android:label="fragment_ozel_personel"
+        tools:layout="@layout/fragment_ozel_personel" >
+        <argument
+            android:name="personel_bilgi"
+            app:argType="com.papillionotelandspa.spash_screen.Personel" />
+    </fragment>
+    <fragment
+        android:id="@+id/personelEkleFragment"
+        android:name="com.papillionotelandspa.spash_screen.PersonelEkleFragment"
+        android:label="fragment_personel_ekle"
+        tools:layout="@layout/fragment_personel_ekle" >
+        <action
+            android:id="@+id/personelGecis"
+            app:destination="@id/personelFragment" />
+    </fragment>
+</navigation>

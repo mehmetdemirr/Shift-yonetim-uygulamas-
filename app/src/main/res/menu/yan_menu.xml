@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_kisi_duzenle"
+        android:title="Kişileri düzenle" />
+    <item
+        android:id="@+id/action_personel_ekle"
+        android:title="Personel ekle" />
+    <item
+        android:id="@+id/action_odaya_ikram"
+        android:title="Odaya ikram" />
+    <item
+        android:id="@+id/action_malzeme_girme"
+        android:title="Malzeme Girme" />
+    <item
+        android:id="@+id/action_ayarlar"
+        android:title="Ayarlar" />
+    <item
+        android:id="@+id/action_cikis"
+        android:title="Çıkış" />
+</menu>
